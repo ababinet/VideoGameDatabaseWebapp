@@ -1,0 +1,52 @@
+<!--
+    Dani Bottiger
+    Alia Babinet
+
+    CS 257 Software Design Fall 2021
+    Carleton College
+
+    home.html
+    Home Page for Good Games Database Website
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Video Game DB Home Page</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="{{ url_for('static', filename='home.js') }}" ></script>
+    </head>
+    <body>
+        <ul class="horizontal-navbar">
+            <li><p class="active">GOOD GAMES DATABASE</p></li>
+            <li><a class="active" id="home_page">Home</a></li>
+            <li><a id="recommendations_page">Recommendations</a></li>
+            <li><a id="rankings_page">Rankings</a></li>
+            <li><a id="comparisons_page">Comparisons</a></li>
+            <li><a id="about_page">About</a></li>
+            <div class="search-container">
+                <form action="/search/" method="get">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                  <input type="text" placeholder="Search..." name="search">
+                </form>
+            </div>
+        </ul>
+        <div class="page-body">
+            <h1>
+                Top 20 Video Games of All Time:
+            </h1>
+            <p><table id="best_video_games_table">
+                <tr>
+                    <th>Rank</th>
+                    <th>Game</th>
+                    <th>Year Released</th>
+                    <th>Genre</th>
+                    <th>Meta Critic Score</th>
+                    <th>Publisher</th>
+                </tr>
+            </table></p>
+        </div>
+    </body>
+</html>

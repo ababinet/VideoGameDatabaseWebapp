@@ -1,0 +1,5 @@
+\copy publishers FROM 'publishers.csv' DELIMITER ',' CSV NULL AS 'NULL'
+\copy genres FROM 'genres.csv' DELIMITER ',' CSV NULL AS 'NULL'
+\copy platforms FROM 'platforms.csv' DELIMITER ',' CSV NULL AS 'NULL'
+\copy video_games FROM 'video_games.csv' DELIMITER ',' CSV NULL AS 'NULL'
+\copy video_game_versions FROM 'video_game_versions.csv' DELIMITER ',' CSV NULL AS 'NULL'

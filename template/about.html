@@ -1,0 +1,70 @@
+<!--
+    Dani Bottiger
+    Alia Babinet
+
+    CS 257 Software Design Fall 2021
+    Carleton College
+
+    about.html
+    About Page for Video Game Database Website
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Video Game DB Home Page</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="{{ url_for('static', filename='about.js') }}" ></script>
+    </head>
+    <body>
+        <ul class="horizontal-navbar">
+            <li><p class="active">GOOD GAMES DATABASE</p></li>
+            <li><a id="home_page">Home</a></li>
+            <li><a id="recommendations_page">Recommendations</a></li>
+            <li><a id="rankings_page">Rankings</a></li>
+            <li><a id="comparisons_page">Comparisons</a></li>
+            <li><a class="active" id="about_page">About</a></li>
+            <div class="search-container">
+                <form action="/search/" method="get">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                  <input type="text" placeholder="Search.." name="search">
+                </form>
+            </div>
+        </ul>
+        <div class="page-body">
+            <h1>
+                About
+            </h1>
+            <p>
+                Good Games Database is a website designed by Dani Bottiger and Alia Babinet for CS 257 Software Design Fall 2021 at Carleton College.<br>
+                It is a video games database to see rankings, comparisons, recommendations, and the general information about the game. Each page with user input has instructions on how to use it.
+            </p>
+            <p id="api_help"></p>
+            <h2>
+                Acknowledgements
+            </h2>
+            <p>
+                <li>
+                    Database provided by
+                <a href="https://www.kaggle.com/kendallgillies/video-game-sales-and-ratings">Kendall Gillies' Video Game Sales and Ratings Database</a>
+                </li>
+                <li>
+                    CS 257 taught by <a href="https://cs.carleton.edu/faculty/jondich/">Jeff Ondich</a>
+                </li>
+            </p>
+            <h2>
+                Contact
+            </h2>
+            <p>
+                <li>
+                    Dani Bottiger - <a href="mailto:DaniBottiger@gmail.com?subject=Video Game Database">DaniBottiger@gmail.com</a>
+                </li>
+                <li>
+                    Alia Babinet - <a href="mailto:AliaBabinet@gmail.com?subject=Video Game Database">AliaBabinet@gmail.com</a>
+                </li>
+            </p>
+        </div>
+    </body>
+</html>

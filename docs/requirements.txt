@@ -1,0 +1,36 @@
+Dani Bottiger & Alia Babinet
+User Stories
+Video Game Sales and Ratings Database:
+https://www.kaggle.com/kendallgillies/video-game-sales-and-ratings
+This is a database of video games, their ratings based on metacritic scores, and sales.
+
+STORY:  Clovis, 28, just finished his seventh 200-hour playthrough of Skyrim and
+is looking for other RPG games that’d be worth his time. He’d like to know what
+other RPG games have as good of a score as Skyrim or better.
+IMPLEMENTATION: We could have an extremely simple recommendation system based on
+a genre and metacritic scores. This could be accomplished when looking at a video
+game’s information, where the bottom could be an expandable list of similar games
+and/or a recommendation section of the website.
+
+STORY: Molly, 17, is new to video games and wants to play the top ten video games
+of every year, but she’s ten years late! She needs a way to look up the top ten
+games from different years so she can get started.
+IMPLEMENTATION: We can have a section of a website called “Critic’s Best Of” or
+something like that, where you can search for the best games (based on metacritic
+score) of a year, genre, or platform.
+
+STORY: William, 23, has a vague recollection of playing a beloved childhood video
+game with his pals in middle school. But unfortunately, he can’t remember the name,
+only a variety of other specifications about the game. He wants to be able to search
+for all action games in the years 2006-2008 made by EA games.
+IMPLEMENTATION: This would basically be a general search function that would allow
+someone to search through all the games with filters for title, year released,
+developer, genre, rating (ESRB), platform.
+
+STORY: Kinsey, 8, and Tyler, 10, are siblings having a rivalry. Kinsey insists
+that The Sims 3 is the best game ever made. Tyler, being the older sibling, insists
+that she is wrong and it must be Minecraft. They need a way to compare scores and
+sales to determine which sibling is right.
+IMPLEMENTATION: We can have a comparison section of the website where two video
+games can be compared. General information about each game like its year and genre
+can be shown. Information like the sales by region and metacritic scores can be compared.
